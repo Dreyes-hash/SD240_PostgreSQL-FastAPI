@@ -115,7 +115,7 @@ def compra_por_id(id:int, sesion:Session=Depends(generador_sesion)):
     print("Buscando compra por id")
     return repo.compra_por_id(sesion, id)
 
-# "/compras?id_usuario={id_usr}&precio={p}"
+# "/comhttps://github.com/Dreyes-hash/SD240_PostgreSQL-FastAPIpras?id_usuario={id_usr}&precio={p}"
 @app.get("/compras")
 def lista_compras(id_usuario:int,precio:float,sesion:Session=Depends(generador_sesion)):
     print("/compras?id_usuario={id_usr}&precio={p}")
